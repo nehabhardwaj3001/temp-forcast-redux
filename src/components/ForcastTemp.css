@@ -1,0 +1,26 @@
+h1 {
+    font-size: 82px;
+    font-weight: 300;
+    background-color:lightgray;
+    padding: 100px;
+    margin: 10px 50px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.ant-input {
+    font-size: 16px;
+    color: #1890ff;
+}
+
+.ant-card {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    margin: auto;
+    margin-top: 20px;
+}
