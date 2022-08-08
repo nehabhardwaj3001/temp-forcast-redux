@@ -11,14 +11,15 @@ const initialState = { weatherData };
         };
 
         case types.INC_TEMP_SUCCESS : 
-        let data =state.weatherData.map((item, i) => i === action.data ? {...item, temp: item.temp + 0.2 } : item)
+        let data =state.weatherData.map((item, i) => item.day === action.data ? {...item, temp: item.temp + 0.2 } : item)
         return{
             ...state,
             weatherData : data
         };
 
         case types.DEC_TEMP_SUCCESS : 
-        let decData =state.weatherData.map((item, i) => i === action.data ? {...item, temp: item.temp - 0.3 } : item)
+        let decData =state.weatherData.map((item, i) => item.day === action.data ? {...item, temp: item.temp - 0.3 } : item)
+        console.log("decData", decData, action)
         return{
             ...state,
             weatherData : decData
